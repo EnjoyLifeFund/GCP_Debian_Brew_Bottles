@@ -1,17 +1,8 @@
-==> Upgrading 1 outdated package, with result:
-curl 7.57.0
-==> Upgrading curl 
-==> Downloading https://curl.haxx.se/download/curl-7.57.0.tar.bz2
-==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/curl/7.57.0 --with-ssl=/home/linuxbrew/.linuxbrew/opt/openssl --with-ca-bundle=/home/linuxbrew/.linuxbrew/etc/openssl/cert.pem --with-ca-path=/home/linuxbrew/.linuxbrew/etc/openssl/certs --without-libssh2 --without-libmetalink --without-gssapi --without-librtmp --disable-ares --disable-ldap
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall curl`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/curl/7.57.0: 415 files, 3.5MB, built in 10 minutes 53 seconds
-==> Determining curl bottle rebuild...
-==> Bottling curl-7.57.0.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if curl-7.57.0.x86_64_linux.bottle.1.tar.gz is relocatable...
-./curl-7.57.0.x86_64_linux.bottle.1.tar.gz
+==> Determining openssl bottle rebuild...
+==> Bottling openssl-1.0.2m.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if openssl-1.0.2m.x86_64_linux.bottle.1.tar.gz is relocatable...
+./openssl-1.0.2m.x86_64_linux.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "4f38db0f9cfe8b630091c6e3853ec50f4908127237115318ad5428873a0351c6" => :x86_64_linux
+    sha256 "46f38cd953b6d0e95c2bb2493a631e70aebd6e41f2959885fe204c3fb5e21459" => :x86_64_linux
   end

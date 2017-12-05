@@ -1,0 +1,17 @@
+==> Upgrading 1 outdated package, with result:
+expat 2.2.5
+==> Upgrading expat 
+==> Downloading https://downloads.sourceforge.net/project/expat/expat/2.2.5/expat-2.2.5.tar.bz2
+==> Downloading from http://cfhcable.dl.sourceforge.net/project/expat/expat/2.2.5/expat-2.2.5.tar.bz2
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/expat/2.2.5 --mandir=/home/linuxbrew/.linuxbrew/Cellar/expat/2.2.5/share/man --with-libbsd
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall expat`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/expat/2.2.5: 18 files, 1.5MB, built in 40 seconds
+==> Determining expat bottle rebuild...
+==> Bottling expat-2.2.5.x86_64_linux.bottle.1.tar.gz...
+./expat-2.2.5.x86_64_linux.bottle.1.tar.gz
+  bottle do
+    rebuild 1
+    sha256 "be198ca73dbeb16aa26300c612881dcc84dfaa511a90046803c74a5e464d9567" => :x86_64_linux
+  end

@@ -1,80 +1,17 @@
 ==> Upgrading 1 outdated package, with result:
-node 8.9.1
-==> Upgrading node 
-==> Installing dependencies for node: sqlite, openssl, python, icu4c
-==> Installing node dependency: sqlite
-==> Downloading https://linuxbrew.bintray.com/bottles/sqlite-3.21.0.x86_64_linux.bottle.tar.gz
-==> Pouring sqlite-3.21.0.x86_64_linux.bottle.tar.gz
-🍺  /home/linuxbrew/.linuxbrew/Cellar/sqlite/3.21.0: 12 files, 19.5MB
-==> Installing node dependency: openssl
-==> Downloading https://linuxbrew.bintray.com/bottles/openssl-1.0.2m.x86_64_linux.bottle.tar.gz
-==> Pouring openssl-1.0.2m.x86_64_linux.bottle.tar.gz
-==> Downloading https://curl.haxx.se/ca/cacert-2017-01-18.pem
-Trying a mirror...
-==> Downloading http://cdn.rawgit.com/sjackman/e4066d2cb6b45fbb6d213e676cb109d0/raw/58964378cb5eefe96cba245ef863c57fb2b480e0/cacert-2017-01-18.pem
-==> Caveats
-A CA file has been bootstrapped using certificates from the SystemRoots
-keychain. To add additional certificates (e.g. the certificates added in
-the System keychain), place .pem files in
-  /home/linuxbrew/.linuxbrew/etc/openssl/certs
-
-and run
-  /home/linuxbrew/.linuxbrew/opt/openssl/bin/c_rehash
-==> Summary
-🍺  /home/linuxbrew/.linuxbrew/Cellar/openssl/1.0.2m: 1,799 files, 14.8MB
-==> Installing node dependency: python
-==> Downloading https://linuxbrew.bintray.com/bottles/python-2.7.14.x86_64_linux.bottle.tar.gz
-==> Pouring python-2.7.14.x86_64_linux.bottle.tar.gz
-==> /home/linuxbrew/.linuxbrew/Cellar/python/2.7.14/bin/python2 -s setup.py --no-user-cfg install --force --verbose --single-version-externally-managed --record=installed.txt --install-scripts=/home/linuxbrew/.linuxbrew/Cellar/python/2.7.14/bin --install-lib=/home/linuxbrew/.linuxbrew/lib/python2.7/site-packages
-==> /home/linuxbrew/.linuxbrew/Cellar/python/2.7.14/bin/python2 -s setup.py --no-user-cfg install --force --verbose --single-version-externally-managed --record=installed.txt --install-scripts=/home/linuxbrew/.linuxbrew/Cellar/python/2.7.14/bin --install-lib=/home/linuxbrew/.linuxbrew/lib/python2.7/site-packages
-==> /home/linuxbrew/.linuxbrew/Cellar/python/2.7.14/bin/python2 -s setup.py --no-user-cfg install --force --verbose --single-version-externally-managed --record=installed.txt --install-scripts=/home/linuxbrew/.linuxbrew/Cellar/python/2.7.14/bin --install-lib=/home/linuxbrew/.linuxbrew/lib/python2.7/site-packages
-==> Caveats
-This formula installs a python2 executable to /home/linuxbrew/.linuxbrew/bin.
-If you wish to have this formula's python executable in your PATH then add
-the following to ~/.bash_profile:
-  export PATH="/home/linuxbrew/.linuxbrew/opt/python/libexec/bin:$PATH"
-
-Pip and setuptools have been installed. To update them
-  pip2 install --upgrade pip setuptools
-
-You can install Python packages with
-  pip2 install <package>
-
-They will install into the site-package directory
-  /home/linuxbrew/.linuxbrew/lib/python2.7/site-packages
-
-See: https://docs.brew.sh/Homebrew-and-Python.html
-
-Python modules have been installed and Homebrew's site-packages is not
-in your Python sys.path, so you will not be able to import the modules
-this formula installed. If you plan to develop with these modules,
-please run:
-  mkdir -p /home/ralic/.local/lib/python2.7/site-packages
-  echo 'import site; site.addsitedir("/home/linuxbrew/.linuxbrew/lib/python2.7/site-packages")' >> /home/ralic/.local/lib/python2.7/site-packages/homebrew.pth
-==> Summary
-🍺  /home/linuxbrew/.linuxbrew/Cellar/python/2.7.14: 2,946 files, 71.5MB
-==> Installing node dependency: icu4c
-==> Downloading https://linuxbrew.bintray.com/bottles/icu4c-59.1_1.x86_64_linux.bottle.tar.gz
-==> Pouring icu4c-59.1_1.x86_64_linux.bottle.tar.gz
-🍺  /home/linuxbrew/.linuxbrew/Cellar/icu4c/59.1_1: 246 files, 70.2MB
-==> Installing node
-==> Downloading https://nodejs.org/dist/v8.9.1/node-v8.9.1.tar.xz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/node/8.9.1 --without-npm --with-intl=system-icu
+curl 7.57.0
+==> Upgrading curl 
+==> Downloading https://curl.haxx.se/download/curl-7.57.0.tar.bz2
+==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/curl/7.57.0 --with-ssl=/home/linuxbrew/.linuxbrew/opt/openssl --with-ca-bundle=/home/linuxbrew/.linuxbrew/etc/openssl/cert.pem --with-ca-path=/home/linuxbrew/.linuxbrew/etc/openssl/certs --without-libssh2 --without-libmetalink --without-gssapi --without-librtmp --disable-ares --disable-ldap
 ==> make install
-==> Downloading https://registry.npmjs.org/npm/-/npm-5.5.1.tgz
-==> node /tmp/node-20171205-12673-jwzzj7/node-v8.9.1/npm_bootstrap/bin/npm-cli.js install -ddd --global --prefix=/home/linuxbrew/.linuxbrew/Cellar/node/8.9.1/libexec /home/ralic/.cache/Homebrew/node--npm-5.5.1.tgz
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall node`
-==> Caveats
-Bash completion has been installed to:
-  /home/linuxbrew/.linuxbrew/etc/bash_completion.d
-==> Summary
-🍺  /home/linuxbrew/.linuxbrew/Cellar/node/8.9.1: 5,026 files, 54.2MB, built in 241 minutes 20 seconds
-==> Determining node bottle rebuild...
-==> Bottling node-8.9.1.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if node-8.9.1.x86_64_linux.bottle.1.tar.gz is relocatable...
-./node-8.9.1.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall curl`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/curl/7.57.0: 415 files, 3.5MB, built in 10 minutes 53 seconds
+==> Determining curl bottle rebuild...
+==> Bottling curl-7.57.0.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if curl-7.57.0.x86_64_linux.bottle.1.tar.gz is relocatable...
+./curl-7.57.0.x86_64_linux.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "56c49fcb8afe7e017cdf4a972d44370c29253ccb1f34cc3a14fa35d7709ca485" => :x86_64_linux
+    sha256 "4f38db0f9cfe8b630091c6e3853ec50f4908127237115318ad5428873a0351c6" => :x86_64_linux
   end

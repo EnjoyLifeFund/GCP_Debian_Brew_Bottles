@@ -1,26 +1,21 @@
 ==> Upgrading 1 outdated package, with result:
-libxml2 2.9.7
-==> Upgrading libxml2 
-==> Downloading http://xmlsoft.org/sources/libxml2-2.9.7.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/libxml2/2.9.7 --without-python --without-lzma
+cmake 3.10.0
+==> Upgrading cmake 
+==> Downloading https://cmake.org/files/v3.10/cmake-3.10.0.tar.gz
+==> ./bootstrap --prefix=/home/linuxbrew/.linuxbrew/Cellar/cmake/3.10.0 --no-system-libs --parallel=1 --datadir=/share/cmake --docdir=/share/doc/cmake --mandir=/share/man --system-zlib --system-bzip2 --system-curl --sphinx-man --sphinx-build=/home/linuxbrew/.linuxbrew/opt/sphinx-doc/bin/sphinx-build -- -DCMAKE_BUILD_TYPE=Release
+==> make
 ==> make install
-==> python setup.py install --prefix=/home/linuxbrew/.linuxbrew/Cellar/libxml2/2.9.7
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libxml2`
+You can run it manually using `brew postinstall cmake`
 ==> Caveats
-Python modules have been installed and Homebrew's site-packages is not
-in your Python sys.path, so you will not be able to import the modules
-this formula installed. If you plan to develop with these modules,
-please run:
-  mkdir -p /home/ralic/.local/lib/python2.7/site-packages
-  echo 'import site; site.addsitedir("/home/linuxbrew/.linuxbrew/lib/python2.7/site-packages")' >> /home/ralic/.local/lib/python2.7/site-packages/homebrew.pth
+Emacs Lisp files have been installed to:
+  /home/linuxbrew/.linuxbrew/share/emacs/site-lisp/cmake
 ==> Summary
-🍺  /home/linuxbrew/.linuxbrew/Cellar/libxml2/2.9.7: 284 files, 20.3MB, built in 9 minutes 22 seconds
-==> Determining libxml2 bottle rebuild...
-==> Bottling libxml2-2.9.7.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if libxml2-2.9.7.x86_64_linux.bottle.1.tar.gz is relocatable...
-./libxml2-2.9.7.x86_64_linux.bottle.1.tar.gz
+🍺  /home/linuxbrew/.linuxbrew/Cellar/cmake/3.10.0: 2,332 files, 37.1MB, built in 76 minutes 27 seconds
+==> Determining cmake bottle rebuild...
+==> Bottling cmake-3.10.0.x86_64_linux.bottle.tar.gz...
+==> Detecting if cmake-3.10.0.x86_64_linux.bottle.tar.gz is relocatable...
+./cmake-3.10.0.x86_64_linux.bottle.tar.gz
   bottle do
-    rebuild 1
-    sha256 "28db894573f43aca9e537f7c6bb50f6b78c9d9ba7dcd7cfb7ccd3df3cdade7f0" => :x86_64_linux
+    sha256 "a55dc0bd52ec115622dc2f5cbaba0a9e9e989a48ebaf09e55f118812cf5c4585" => :x86_64_linux
   end

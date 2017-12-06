@@ -1,21 +1,9 @@
-==> Upgrading 1 outdated package, with result:
-cmake 3.10.0
-==> Upgrading cmake 
-==> Downloading https://cmake.org/files/v3.10/cmake-3.10.0.tar.gz
-==> ./bootstrap --prefix=/home/linuxbrew/.linuxbrew/Cellar/cmake/3.10.0 --no-system-libs --parallel=1 --datadir=/share/cmake --docdir=/share/doc/cmake --mandir=/share/man --system-zlib --system-bzip2 --system-curl --sphinx-man --sphinx-build=/home/linuxbrew/.linuxbrew/opt/sphinx-doc/bin/sphinx-build -- -DCMAKE_BUILD_TYPE=Release
-==> make
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall cmake`
-==> Caveats
-Emacs Lisp files have been installed to:
-  /home/linuxbrew/.linuxbrew/share/emacs/site-lisp/cmake
-==> Summary
-🍺  /home/linuxbrew/.linuxbrew/Cellar/cmake/3.10.0: 2,332 files, 37.1MB, built in 76 minutes 27 seconds
-==> Determining cmake bottle rebuild...
-==> Bottling cmake-3.10.0.x86_64_linux.bottle.tar.gz...
-==> Detecting if cmake-3.10.0.x86_64_linux.bottle.tar.gz is relocatable...
-./cmake-3.10.0.x86_64_linux.bottle.tar.gz
+==> Determining icu4c bottle rebuild...
+==> Bottling icu4c-59.1_1.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if icu4c-59.1_1.x86_64_linux.bottle.1.tar.gz is relocatable...
+./icu4c-59.1_1.x86_64_linux.bottle.1.tar.gz
   bottle do
-    sha256 "a55dc0bd52ec115622dc2f5cbaba0a9e9e989a48ebaf09e55f118812cf5c4585" => :x86_64_linux
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "e3ca15f41a09e1509eff33f1fb4d26889feb5c086d7296b5bb1fdedc1a1829a7" => :x86_64_linux
   end

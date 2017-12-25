@@ -1,8 +1,226 @@
-==> Determining python bottle rebuild...
-==> Bottling python-2.7.14.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if python-2.7.14.x86_64_linux.bottle.1.tar.gz is relocatable...
-./python-2.7.14.x86_64_linux.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated Homebrew from 3aecdc0 to 159c1f3.
+Updated 1 tap (homebrew/core).
+==> New Formulae
+ddgr
+node@8
+==> Updated Formulae
+abcmidi
+ace
+ack
+acmetool
+advancemame
+angular-cli
+ansible
+ansible-lint
+aptly
+artifactory
+aws-sdk-cpp
+bedtools
+binaryen
+blockhash
+carthage
+ceres-solver
+certbot
+chamber
+chromedriver
+cling
+clojure
+corsixth
+couchdb-lucene
+dcm2niix
+dialog
+dmtx-utils
+dnsdist
+docfx
+elasticsearch
+elasticsearch@5.6
+fabio
+fd
+ffmpeg
+fibjs
+filebeat
+flow
+fn
+folly
+fpc
+freeswitch
+game-music-emu
+git-town
+gitbucket
+gjstest
+gnuplot
+gnuplot@4
+gosu
+gperftools
+gradle
+graphicsmagick
+grpc
+gsoap
+gst-editing-services
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gst-python
+gst-rtsp-server
+gst-validate
+gstreamer
+gtk-doc
+gtksourceview3
+hadolint
+haskell-stack
+heartbeat
+heimdal
+highlight
+html-xml-utils
+httest
+imagemagick
+imagemagick@6
+imapfilter
+instead
+jenkins-lts
+jhipster
+joplin
+jruby
+kibana@5.6
+kontena
+kops
+krb5
+kube-aws
+kubernetes-cli
+kyoto-tycoon
+kyua
+lgogdownloader
+libassuan
+libcdio
+liblinear
+libmicrohttpd
+libqalculate
+libquvi
+libraw
+libswiften
+libtensorflow
+libtiff
+logstash
+logstash@5.6
+lsyncd
+lua
+lua@5.1
+lutok
+macvim
+menhir
+meson
+metricbeat
+mgba
+mockserver
+monotone
+mpv
+mrboom
+mujs
+node
+node-build
+node@4
+node@6
+notmuch
+nvm
+octave
+ohcount
+oniguruma
+onscripter
+openssl
+osm2pgsql
+osquery
+osrm-backend
+packer
+packetbeat
+pdns
+pdnsrec
+peco
+percona-server@5.5
+percona-server@5.6
+phoronix-test-suite
+pilosa
+pioneer
+planck
+pqiv
+pre-commit
+presto
+protobuf
+pulledpork
+pyenv
+python-markdown
+qbs
+qt
+radare2
+reminiscence
+rocksdb
+rpm
+rustup-init
+s-nail
+securefs
+sfk
+shellcheck
+sile
+slackcat
+suite-sparse
+sundials
+suricata
+swift
+swift-protobuf
+swiftformat
+sysbench
+tarantool
+telegraf
+thrift
+tinyxml2
+tmuxinator-completion
+tracebox
+traefik
+treefrog
+vips
+wireguard-tools
+wireshark
+wtf
+xmoto
+ydcv
+yle-dl
+youtube-dl
+zbar
+zsh-autosuggestions
+==> Deleted Formulae
+lua@5.3
+
+==> Installing dependencies for catimg: openssl
+==> Installing catimg dependency: openssl
+==> Downloading https://linuxbrew.bintray.com/bottles/openssl-1.0.2n.x86_64_linux.bottle.tar.gz
+==> Pouring openssl-1.0.2n.x86_64_linux.bottle.tar.gz
+==> Downloading https://curl.haxx.se/ca/cacert-2017-01-18.pem
+Trying a mirror...
+==> Downloading http://cdn.rawgit.com/sjackman/e4066d2cb6b45fbb6d213e676cb109d0/raw/58964378cb5eefe96cba245ef863c57fb2b480e0/cacert-2017-01-18.pem
+==> Caveats
+A CA file has been bootstrapped using certificates from the SystemRoots
+keychain. To add additional certificates (e.g. the certificates added in
+the System keychain), place .pem files in
+  /home/linuxbrew/.linuxbrew/etc/openssl/certs
+
+and run
+  /home/linuxbrew/.linuxbrew/opt/openssl/bin/c_rehash
+==> Summary
+🍺  /home/linuxbrew/.linuxbrew/Cellar/openssl/1.0.2n: 1,799 files, 14.8MB
+==> Installing catimg
+==> Downloading https://github.com/posva/catimg/archive/v2.4.0.tar.gz
+==> Downloading from https://codeload.github.com/posva/catimg/tar.gz/v2.4.0
+==> cmake -DMAN_OUTPUT_PATH=/home/linuxbrew/.linuxbrew/Cellar/catimg/2.4.0/share/man/man1 . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/home/linuxbrew/.linuxbrew/Cellar/catimg/2.4.0 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall catimg`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/catimg/2.4.0: 6 files, 106.7KB, built in 3 minutes 15 seconds
+==> Determining catimg bottle rebuild...
+==> Bottling catimg-2.4.0.x86_64_linux.bottle.1.tar.gz...
+./catimg-2.4.0.x86_64_linux.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "95cb31ab80462a8f9ef468df9262344f55eb35f9011024f21c44552c25d27c8c" => :x86_64_linux
+    sha256 "7c9da1a024618d7f5d46f76904886949aafa7edbad1d08cf65c91f4684e1ac2d" => :x86_64_linux
   end
